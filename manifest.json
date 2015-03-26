@@ -1,0 +1,29 @@
+{
+  "name": "Torrent search",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Search at the torrent websites",
+  "icons": {
+    "16":  "pirate-icon_16.png",
+    "48":  "pirate-icon_48.png",
+    "128": "pirate-icon_128.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "pirate-icon_16.png",
+    "default_title": "Torrentz search",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "background",
+    "tabs",
+    "contextMenus",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
